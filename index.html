@@ -10,8 +10,8 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Promos para Elas | Ofertas de beleza no Telegram">
 <meta property="og:description" content="Maquiagem, skincare e perfumaria com desconto real. Canal gratuito, sem spam.">
-<meta property="og:image" content="og-image.jpg">
-<!-- troque pela URL final quando publicar -->
+<meta property="og:image" content="https://promos-para-elas.vercel.app/og-image.jpg">
+     
 <meta property="og:url" content="https://promos-para-elas.vercel.app">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -20,13 +20,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" rel="stylesheet">
 
-<!-- ============================================================
-     META PIXEL — ID 1547055790209161
-     Rastreia visitas (PageView) e cliques nos botões (Lead).
-     Para conferir se está funcionando, instale a extensão
-     "Meta Pixel Helper" no Chrome e abra a página publicada.
-     ============================================================ -->
-<!-- Meta Pixel Code -->
+
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -42,12 +36,7 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1547055790209161&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
 
-<!-- ============================================================
-     GA4 (opcional) — se quiser instalar depois, cole o código
-     aqui. Pegue em https://analytics.google.com
-     ============================================================ -->
 
 <style>
 :root{
@@ -81,7 +70,6 @@ body{
   -webkit-tap-highlight-color:transparent;
 }
 
-/* ---------- BRILHOS DE FUNDO ---------- */
 .sparkles{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
 .sparkle{
   position:absolute;border-radius:50%;
@@ -95,7 +83,6 @@ body{
   100%{transform:translateY(-110px) scale(1.15);opacity:0}
 }
 
-/* ---------- CARD ---------- */
 .container{
   position:relative;z-index:1;
   max-width:480px;width:100%;
@@ -124,7 +111,6 @@ body{
 .d1{animation-delay:.10s}.d2{animation-delay:.20s}.d3{animation-delay:.30s}
 .d4{animation-delay:.40s}.d5{animation-delay:.50s}
 
-/* ---------- TOPO ---------- */
 .brand-header{margin-bottom:18px;display:flex;flex-direction:column;align-items:center;gap:12px}
 .eyebrow{
   background:linear-gradient(135deg,rgba(255,77,133,.16),rgba(255,179,204,.07));
@@ -136,7 +122,6 @@ body{
 }
 .eyebrow svg{width:12px;height:12px;fill:currentColor}
 
-/* título com estrelas cintilantes ao redor */
 .title-wrap{position:relative;display:inline-block;padding:6px 30px}
 h1{font-family:'Fraunces',Georgia,serif;font-size:2.2rem;font-weight:800;line-height:1.12;position:relative;z-index:2}
 h1 em{
@@ -163,7 +148,6 @@ h1 em{
 .subtitle{color:var(--text-muted);font-size:.97rem;line-height:1.6;margin:18px 0 26px}
 .subtitle strong{color:var(--text-main);font-weight:600}
 
-/* ---------- CARROSSEL COM LOGOS ---------- */
 .marquee-label{
   font-size:.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;
   color:var(--text-faint);margin-bottom:12px;
@@ -178,7 +162,6 @@ h1 em{
 .marquee-container.paused .marquee-content{animation-play-state:paused}
 @keyframes marquee{0%{transform:translateX(-50%)}100%{transform:translateX(0)}}
 
-/* cápsula da logo — fundo claro, como marca costuma ser exibida */
 .brand{
   display:inline-flex;flex-direction:column;align-items:center;gap:7px;
   margin:0 13px;vertical-align:top;width:74px;white-space:normal;
@@ -189,7 +172,6 @@ h1 em{
   box-shadow:0 5px 16px rgba(0,0,0,.4),0 0 0 1px rgba(255,255,255,.09);
   overflow:hidden;position:relative;
 }
-/* a logo ocupa a cápsula inteira — cada marca traz sua própria cor de fundo */
 .brand-logo img{width:100%;height:100%;object-fit:cover;display:block}
 .brand-logo .fallback{
   position:absolute;inset:0;display:none;align-items:center;justify-content:center;
@@ -202,7 +184,6 @@ h1 em{
   color:rgba(255,255,255,.72);line-height:1.25;text-align:center;
 }
 
-/* ---------- CTA ---------- */
 .cta-button{
   display:flex;justify-content:center;align-items:center;gap:12px;width:100%;
   min-height:56px;
@@ -232,7 +213,6 @@ h1 em{
 @keyframes shine{0%{left:-100%}20%{left:200%}100%{left:200%}}
 .cta-sub{font-size:.82rem;color:var(--text-muted);margin-bottom:32px}
 
-/* --- botão do WhatsApp: mesma forma, cor da marca --- */
 .cta-button.wa{
   background:linear-gradient(135deg,#25D366 0%,#128C7E 100%);
   box-shadow:0 10px 28px rgba(37,211,102,.34);
@@ -245,20 +225,16 @@ h1 em{
   70%{box-shadow:0 10px 28px rgba(37,211,102,.34),0 0 0 16px rgba(37,211,102,0)}
   100%{box-shadow:0 10px 28px rgba(37,211,102,.34),0 0 0 0 rgba(37,211,102,0)}
 }
-/* alterna o brilho: o WhatsApp pulsa fora de fase pra não competir com o Telegram */
 .cta-button.wa{animation-delay:1.2s}
 
-/* espaçamento entre os dois botões */
 .cta-stack{display:flex;flex-direction:column;gap:10px}
 .cta-stack .cta-button{margin-bottom:0}
 
-/* linha "escolha por onde prefere receber" */
 .cta-choice{
   font-size:.73rem;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;
   color:var(--text-faint);margin-bottom:13px;
 }
 
-/* ---------- BENEFÍCIOS ---------- */
 .features{text-align:left;margin-bottom:30px}
 .section-head{margin-bottom:22px;text-align:center}
 .section-head h2{font-family:'Fraunces',Georgia,serif;font-size:1.32rem;font-weight:600}
@@ -305,13 +281,11 @@ h1 em{
 .feature-text strong{display:block;font-size:1rem;margin-bottom:6px;font-weight:700}
 .feature-text p{font-size:.87rem;color:var(--text-muted);line-height:1.6}
 
-/* ---------- DIVISOR ---------- */
 .divider{display:flex;align-items:center;justify-content:center;gap:12px;margin:0 0 24px}
 .divider .line{height:1px;flex:1;max-width:120px;background:linear-gradient(90deg,transparent,rgba(255,122,163,.35))}
 .divider .line:last-child{background:linear-gradient(90deg,rgba(255,122,163,.35),transparent)}
 .divider svg{width:13px;height:13px;fill:var(--accent-text);opacity:.7;flex-shrink:0}
 
-/* ---------- FAQ ---------- */
 .faq{text-align:left}
 .faq h2{font-family:'Fraunces',Georgia,serif;font-size:1.16rem;margin-bottom:14px;font-weight:600;text-align:center}
 .faq-item{border-bottom:1px solid rgba(255,122,163,.1)}
@@ -337,7 +311,6 @@ h1 em{
 .faq-a-inner{overflow:hidden}
 .faq-a{color:var(--text-muted);font-size:.86rem;line-height:1.6;padding:0 2px 15px}
 
-/* ---------- CTA FINAL ---------- */
 .cta-repeat{margin-top:28px;padding-top:26px;position:relative}
 .cta-repeat::before{
   content:'';position:absolute;top:0;left:8%;right:8%;height:1px;
@@ -347,7 +320,6 @@ h1 em{
 footer{margin-top:26px;font-size:.72rem;color:var(--text-faint);line-height:1.65}
 footer a{color:var(--text-muted)}
 
-/* ---------- SÓ PARA CURSOR ---------- */
 @media (hover:hover) and (pointer:fine){
   .cta-button:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(255,77,133,.55)}
   .feature-item:hover{transform:translateY(-3px);border-color:rgba(255,122,163,.3)}
@@ -356,7 +328,6 @@ footer a{color:var(--text-muted)}
   .faq-q:hover{color:var(--accent-text)}
 }
 
-/* ---------- TELAS PEQUENAS ---------- */
 @media (max-width:400px){
   .container{padding:34px 18px 28px;border-radius:24px}
   h1{font-size:1.92rem}
@@ -407,7 +378,6 @@ footer a{color:var(--text-muted)}
     </div>
 
     <div class="title-wrap">
-      <!-- estrelas cintilantes ao redor do título -->
       <svg class="star s1" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5l2.5 7.2L22 11l-7.5 2.3L12 22.5l-2.5-9.2L2 11l7.5-2.3z"/></svg>
       <svg class="star s2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5l2.5 7.2L22 11l-7.5 2.3L12 22.5l-2.5-9.2L2 11l7.5-2.3z"/></svg>
       <svg class="star s3" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5l2.5 7.2L22 11l-7.5 2.3L12 22.5l-2.5-9.2L2 11l7.5-2.3z"/></svg>
@@ -428,24 +398,7 @@ footer a{color:var(--text-muted)}
     <strong>A gente garimpa o dia inteiro</strong> — você só recebe o que vale a pena.
   </p>
 
-  <!-- ============================================================
-       CARROSSEL DE LOGOS
-
-       As imagens ficam na pasta logos/ ao lado deste arquivo.
-       Todas foram normalizadas para 240x240 preservando a cor de
-       fundo oficial de cada marca (por isso as logos brancas não
-       somem no fundo escuro da página).
-
-       Para adicionar ou trocar uma marca: salve o PNG em
-       logos/nome.png (240x240) e copie um bloco .brand, lembrando
-       de repetir NOS DOIS blocos — o original e o loop — senão o
-       carrossel fica desalinhado.
-
-       IMPORTANTE: mantenha aqui apenas marcas cujo programa de
-       afiliado já esteja APROVADO. A Shopee já está. Enquanto a
-       Awin não liberar as demais, o ideal é comentar as linhas
-       correspondentes.
-       ============================================================ -->
+  
   <p class="marquee-label reveal d3">Marcas que acompanhamos</p>
   <div class="marquee-container reveal d3" id="marquee">
     <div class="marquee-content">
@@ -499,7 +452,6 @@ footer a{color:var(--text-muted)}
         <span class="brand-name">Mari Maria</span>
       </div>
 
-      <!-- ===== Loop do carrossel — mantenha idêntico ao bloco acima ===== -->
 
       <div class="brand">
         <div class="brand-logo">
@@ -562,22 +514,7 @@ footer a{color:var(--text-muted)}
         Entrar pelo Telegram
       </a>
 
-      <!-- =========================================================
-           BOTÃO DO WHATSAPP — ATIVAR QUANDO O CANAL EXISTIR
-           1. Crie o canal no WhatsApp
-           2. Copie o link de convite (algo como
-              https://whatsapp.com/channel/XXXXXXXXXXXX)
-           3. Cole no href abaixo
-           4. Remova as marcas de comentário desta linha e da
-              linha logo depois do </a>
-           Faça o mesmo no segundo botão, lá no final da página.
-           ========================================================= -->
-      <!--
-      <a href="COLE_AQUI_O_LINK_DO_CANAL_DO_WHATSAPP" target="_blank" rel="noopener" class="cta-button wa" data-canal="whatsapp">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" style="fill:currentColor;stroke:none"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4-.1-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.5.3-.7.3-1.3.2-1.5 0-.1-.2-.2-.5-.3z"/><path d="M12 2.2A9.7 9.7 0 0 0 3.7 17l-1.4 5.1 5.2-1.4A9.7 9.7 0 1 0 12 2.2zm0 17.7a8 8 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3a8 8 0 1 1 6.9 3.8z"/></svg>
-        Entrar pelo WhatsApp
-      </a>
-      -->
+      
     </div>
     <p class="cta-sub">Grátis · Sem cadastro</p>
   </div>
@@ -613,7 +550,6 @@ footer a{color:var(--text-muted)}
       </div>
     </div>
 
-    <!-- BLOCO 3: gatilho de vigilância contínua — a máquina trabalha por ela -->
     <div class="feature-item">
       <div class="feature-icon">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.4c5 0 9.2 3.6 10.6 7.6-1.4 4-5.6 7.6-10.6 7.6S2.8 16 1.4 12C2.8 8 7 4.4 12 4.4z"/><circle cx="12" cy="12" r="3.4" fill="var(--bg-card)"/></svg>
@@ -694,13 +630,7 @@ footer a{color:var(--text-muted)}
         Entrar pelo Telegram
       </a>
 
-      <!-- BOTÃO DO WHATSAPP — ver instruções no primeiro botão, lá em cima -->
-      <!--
-      <a href="COLE_AQUI_O_LINK_DO_CANAL_DO_WHATSAPP" target="_blank" rel="noopener" class="cta-button wa" data-canal="whatsapp">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" style="fill:currentColor;stroke:none"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4-.1-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.5.3-.7.3-1.3.2-1.5 0-.1-.2-.2-.5-.3z"/><path d="M12 2.2A9.7 9.7 0 0 0 3.7 17l-1.4 5.1 5.2-1.4A9.7 9.7 0 1 0 12 2.2zm0 17.7a8 8 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3a8 8 0 1 1 6.9 3.8z"/></svg>
-        Entrar pelo WhatsApp
-      </a>
-      -->
+     
     </div>
     <p class="cta-sub" style="margin:11px 0 0">Grátis · Sem cadastro</p>
   </div>
@@ -717,7 +647,6 @@ footer a{color:var(--text-muted)}
 (function(){
   var reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* brilhos de fundo */
   if(!reduced){
     var wrap=document.getElementById('sparkles');
     for(var i=0;i<22;i++){
@@ -734,7 +663,6 @@ footer a{color:var(--text-muted)}
     }
   }
 
-  /* cards: entrada ao rolar + feedback de toque */
   var items=document.querySelectorAll('.feature-item');
 
   items.forEach(function(el){
@@ -762,7 +690,6 @@ footer a{color:var(--text-muted)}
     items.forEach(function(el){ io.observe(el); });
   }
 
-  /* carrossel pausa com o dedo */
   var mq=document.getElementById('marquee');
   if(mq){
     mq.addEventListener('touchstart',function(){ mq.classList.add('paused'); },{passive:true});
@@ -774,7 +701,6 @@ footer a{color:var(--text-muted)}
 
 
 
-  /* ---- Meta Pixel: registrar clique nos botoes de canal ---- */
   document.querySelectorAll('[data-canal]').forEach(function(btn){
     btn.addEventListener('click', function(){
       var canal = btn.getAttribute('data-canal');
@@ -790,7 +716,6 @@ footer a{color:var(--text-muted)}
     });
   });
 
-  /* FAQ acordeão */
   document.querySelectorAll('.faq-q').forEach(function(btn){
     btn.addEventListener('click',function(){
       var item=btn.parentElement;
